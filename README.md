@@ -2,9 +2,7 @@
 
 前端技术双周刊，是百度 KFive 团队推出的技术期刊，记录值得分享的技术好文。
 
-希望拓宽同学们的技术视野，营造良好的技术氛围。
-
-不止关心脚下的路，还要多看看远处的风景。
+希望拓宽同学们的技术视野，营造良好的技术氛围。不止关心脚下的路，还要多看看远处的风景。
 
 欢迎投稿，推荐或自荐文章，您可以通过提 [issue](https://github.com/SearchFeed/weekly/issues) 的方式发起投稿。
 
@@ -27,6 +25,8 @@
 
 ### 周刊日志
 
+- [前端技术双周刊第 9 期](https://searchfeed.github.io/weekly/2021-10-27)
+- [前端技术双周刊第 8 期](https://searchfeed.github.io/weekly/2021-10-13)
 - [前端技术双周刊第 7 期](https://searchfeed.github.io/weekly/2021-9-29)
 - [前端技术双周刊第 6 期](https://searchfeed.github.io/weekly/2021-9-15)
 - [前端技术双周刊第 5 期](https://searchfeed.github.io/weekly/2021-9-1)
