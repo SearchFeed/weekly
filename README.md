@@ -25,6 +25,11 @@
 
 ### 周刊日志
 
+- [前端技术双周刊第 15 期](https://searchfeed.github.io/weekly/2022-1-19)
+- [前端技术双周刊第 14 期](https://searchfeed.github.io/weekly/2022-1-5)
+- [前端技术双周刊第 13 期](https://searchfeed.github.io/weekly/2021-12-22)
+- [前端技术双周刊第 12 期](https://searchfeed.github.io/weekly/2021-12-8)
+- [前端技术双周刊第 11 期](https://searchfeed.github.io/weekly/2021-11-24)
 - [前端技术双周刊第 10 期](https://searchfeed.github.io/weekly/2021-11-10)
 - [前端技术双周刊第 9 期](https://searchfeed.github.io/weekly/2021-10-27)
 - [前端技术双周刊第 8 期](https://searchfeed.github.io/weekly/2021-10-13)
