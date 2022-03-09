@@ -1,0 +1,25 @@
+{
+  "name": "weekly",
+  "version": "1.0.0",
+  "description": "前端技术双周刊，是百度 KFive 团队推出的技术期刊，记录值得分享的技术好文。",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SearchFeed/weekly.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SearchFeed/weekly/issues"
+  },
+  "homepage": "https://github.com/SearchFeed/weekly#readme",
+  "devDependencies": {
+    "moment": "^2.29.1"
+  }
+}
