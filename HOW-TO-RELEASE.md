@@ -1,4 +1,4 @@
-# 发布一次周刊所需要的工作
+# 周刊发布流程
 
 1. 触发 Github Actions 中的 relase action：
 
