@@ -101,7 +101,7 @@ async function run() {
 
     fs.writeFileSync(path.resolve(__dirname, `../docs/${moment().format('YYYY-M-D')}.md`), content, 'utf-8');
 
-    console.log(`::set-output name=issues::${issueIDs.map(item => `fix: ${item}`).join(' ')}`);
+    console.log(`::set-output name=issues::${issueIDs.map(item => `resolve: #${item}`).join(' ')}`);
 }
 
 run();

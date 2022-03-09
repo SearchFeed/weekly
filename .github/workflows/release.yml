@@ -27,7 +27,7 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         uses: gr2m/create-or-update-pull-request-action@v1
         with:
-          author: Weekly Bot <github-bot@iojs.org>
+          author: Weekly Bot <github-bot@weekly.com>
           branch: release/new-post
           body: This PR was auto generated.
           commit-message: 'add: ${{ steps.gen-markdown.outputs.issues }}'
