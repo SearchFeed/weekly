@@ -1,0 +1,34 @@
+name: release
+on: workflow_dispatch
+jobs:
+  release:
+    name: Release
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
+      - name: Setup Node.js
+        uses: actions/setup-node@v1
+        with:
+          node-version: 16
+      - name: NPM install
+        run: |
+          npm ci
+      - name: generate markdown
+        id: gen-markdown
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          node ./scripts/index.js
+      - name: Open pull request
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        uses: gr2m/create-or-update-pull-request-action@v1
+        with:
+          author: Weekly Bot <github-bot@iojs.org>
+          branch: release/new-post
+          body: This PR was auto generated.
+          commit-message: 'add: ${{ steps.gen-markdown.outputs.issues }}'
+          title: 'add: new post'
