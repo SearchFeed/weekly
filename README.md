@@ -14,16 +14,16 @@
 双周三发布（如遇节假日往后顺延）
 
 ### 发布渠道
-1. Github 博客
 1. [KFive 知乎专栏](https://www.zhihu.com/column/c_1184770014971883520)
-2. KFive 公众号
+2. 公众号『百度技术培训中心』=> 『学习成长』菜单 => 『KFiveTeam』
 
-欢迎关注
+欢迎关注公众号『百度技术培训中心』
 <p align="left">
-  <img src="https://user-images.githubusercontent.com/32173521/128337769-2fd55e3b-5bc6-4d53-905e-b2407d725b85.png" width="200" alt="KFiveTeam" />
+  <img src="https://user-images.githubusercontent.com/4032009/157445118-bc688f7f-0fe7-4d1e-b76e-890c9fc8c1ea.JPG" width="200" alt="百度技术培训中心" />
 </p>
 
 ### 周刊日志
+- [前端技术双周刊第 18 期](https://searchfeed.github.io/weekly/2022-3-9)
 - [前端技术双周刊第 17 期](https://searchfeed.github.io/weekly/2022-2-23)
 - [前端技术双周刊第 16 期](https://searchfeed.github.io/weekly/2022-2-9)
 - [前端技术双周刊第 15 期](https://searchfeed.github.io/weekly/2022-1-19)
