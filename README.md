@@ -23,7 +23,7 @@
 </p>
 
 ### 周刊日志
-- [前端技术双周刊第 21 期](https://searchfeed.github.io/weekly/2022-5-5)
+- [前端技术双周刊第 22 期](https://searchfeed.github.io/weekly/2022-5-5)
 - [前端技术双周刊第 21 期](https://searchfeed.github.io/weekly/2022-4-20)
 - [前端技术双周刊第 20 期](https://searchfeed.github.io/weekly/2022-4-6)
 - [前端技术双周刊第 19 期](https://searchfeed.github.io/weekly/2022-3-23)
