@@ -1,6 +1,6 @@
 # 周刊发布流程
 
-1. 触发 Github Actions 中的 relase action：
+1. 触发 Github Actions 中的 release action：
 
 ![image](https://user-images.githubusercontent.com/9262426/157417402-55796bb6-77c4-484b-8b96-a3c3ac67e137.png)
 
