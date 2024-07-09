@@ -20,7 +20,7 @@ function runCommand(command) {
                     reject('run gh failed: ' + stderr);
                     return;
                 }
-    
+
                 resolve(stdout);
             }
         );
