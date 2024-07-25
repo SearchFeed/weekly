@@ -92,7 +92,7 @@ async function run() {
 
     // 产出内容
     const day = moment().format('YYYY.MM.DD');
-    let content = `# 前端技术双周刊-${day}\n\n`;
+    let content = `# 前端&AI技术双周刊-${day}\n\n`;
     Object.keys(blog).forEach(cate => {
         content += `## ${cate}\n`;
         const articles = blog[cate];
