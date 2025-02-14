@@ -40,8 +40,9 @@ async function getOpenIssuesID() {
  */
 async function readIssueContent(id) {
     const res = await runCommand(`gh issue view --repo SearchFeed/weekly ${id} --json body`);
-    const body = JSON.parse(res).body;
-    const lines = body.split('\r\n');
+    let body = JSON.parse(res).body;
+    body = body.replace(/\r\n|\r|\n/g, '\n');
+    const lines = body.split('\n');
     const data = lines.reduce((prev, item) => {
         let [key, value] = item.split('：');
         key = key.replace('- ', '');
@@ -70,15 +71,6 @@ async function run() {
         const title = item['标题'];
         const reason = item['推荐理由（文章评论/解读）'];
         if (!cate || !url || !title || !reason) {
-            console.log('cate============');
-            console.log(cate);
-            console.log('url================');
-            console.log(url);
-            console.log('title===============');
-            console.log(title);
-            console.log('reason================');
-            console.log(reason);
-            
             console.warn('missing content: ' + JSON.stringify({
                 cate,
                 url,
