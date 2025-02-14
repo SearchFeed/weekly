@@ -70,6 +70,15 @@ async function run() {
         const title = item['标题'];
         const reason = item['推荐理由（文章评论/解读）'];
         if (!cate || !url || !title || !reason) {
+            console.log('cate============');
+            console.log(cate);
+            console.log('url================');
+            console.log(url);
+            console.log('title===============');
+            console.log(title);
+            console.log('reason================');
+            console.log(reason);
+            
             console.warn('missing content: ' + JSON.stringify({
                 cate,
                 url,
