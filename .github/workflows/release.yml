@@ -31,4 +31,4 @@ jobs:
           branch: release/new-post
           body: This PR was auto generated.
           commit-message: 'add: ${{ steps.gen-markdown.outputs.issues }}'
-          title: 'add: new post'
+          title: 'add: ${{ steps.gen-markdown.outputs.count }} posts'
