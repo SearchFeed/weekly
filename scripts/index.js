@@ -3,6 +3,8 @@ const moment = require('moment');
 const path = require('path');
 const fs = require('fs');
 
+const CATE_LIST = ['前端技术', 'AI 资讯', '扩展阅读', '资源推荐'];
+
 /**
  * 执行 github cli 命令
  */
@@ -94,15 +96,28 @@ async function run() {
     // 产出内容
     const day = moment().format('YYYY.MM.DD');
     let content = `# 前端&AI技术双周刊-${day}\n\n`;
-    Object.keys(blog).forEach(cate => {
+    // 首先处理CATE_LIST中定义的分类
+    CATE_LIST.forEach(cate => {
+        if (blog[cate]) {
+            content += `## ${cate}\n`;
+            const articles = blog[cate];
+            content += articles.map(a => `- [${a.title}](${a.url})\n  <br>${a.reason}\n\n`).join('');
+            delete blog[cate];  // 处理过的分类从blog对象中删除
+        }
+    });
+
+    // 然后处理其他未在CATE_LIST中定义的分类，按字母顺序排序
+    const otherCategories = Object.keys(blog).sort();
+    otherCategories.forEach(cate => {
         content += `## ${cate}\n`;
         const articles = blog[cate];
-        content += articles.map(a => `- [${a.title}](${a.url})\n<br>${a.reason}\n\n`).join('');
+        content += articles.map(a => `- [${a.title}](${a.url})\n  <br>${a.reason}\n\n`).join('');
     });
 
     fs.writeFileSync(path.resolve(__dirname, `../docs/${moment().format('YYYY-M-D')}.md`), content, 'utf-8');
 
     console.log(`::set-output name=issues::${issueIDs.map(item => `resolve: #${item}`).join(' ')}`);
+    console.log(`::set-output name=count::${issueIDs.length}`);
 }
 
 run();
