@@ -37,5 +37,5 @@ execSync(
     'git config --global user.email "github-actions[bot]@users.noreply.github.com"'
 );
 execSync('git add README.md');
-execSync('git commit -m "$(date +%F) Update weekly logs in README"');
+execSync('git commit -m "$(date +%F) Update README"');
 execSync('git push');
