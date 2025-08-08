@@ -95,7 +95,7 @@ async function run() {
 
     // 产出内容
     const day = moment().format('YYYY.MM.DD');
-    let content = `# 前端&AI技术双周刊-${day}\n\n`;
+    let content = `# 前端&AI技术双周刊-${day}\n\n\n`;
     // 首先处理CATE_LIST中定义的分类
     CATE_LIST.forEach(cate => {
         if (blog[cate]) {
