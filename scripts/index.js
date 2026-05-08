@@ -46,8 +46,9 @@ async function readIssueContent(id) {
     body = body.replace(/\r\n|\r|\n/g, '\n');
     const lines = body.split('\n');
     const data = lines.reduce((prev, item) => {
-        let [key, value] = item.split('：');
+        let [key, ...value] = item.split('：');
         key = key.replace('- ', '');
+        value = value.join('：');
         prev[key] = value;
         return prev;
     }, {});
