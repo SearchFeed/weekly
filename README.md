@@ -4,7 +4,7 @@
 
 希望拓宽同学们的技术视野，营造良好的技术氛围。不止关心脚下的路，还要多看看远处的风景。
 
-欢迎投稿，推荐或自荐文章，您可以通过提 [issue](https://github.com/SearchFeed/weekly/issues) 的方式发起投稿。
+欢迎投稿，推荐或自荐文章。您可以通过提 [issue](https://github.com/SearchFeed/weekly/issues) 的方式发起投稿。
 
 ### 内容构成
 - 主体：高质量技术文章
